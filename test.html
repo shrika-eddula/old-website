@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrika Eddula's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        #header {
+            width: 100%;
+            background: #1abc9c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #logo img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        #logo h1 {
+            margin: 10px 0 0 0;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        #logo p {
+            margin: 0;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        #nav {
+            margin-top: 20px;
+        }
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        #nav ul li {
+            font-size: 1.2em;
+        }
+        #nav ul li a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+        .icons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .icons a {
+            color: #2c3e50;
+            font-size: 1.5em;
+        }
+        #main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            font-size: 2em;
+            margin: 0 0 10px 0;
+        }
+        .section p {
+            font-size: 1.2em;
+        }
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .two-columns .column {
+            flex: 1;
+            padding: 10px;
+        }
+        .two-columns img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .contact-info {
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .button {
+            background: #1abc9c;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #16a085;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- Logo -->
+            <div id="logo">
+                <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+                <h1 id="title">Shrika Eddula</h1>
+                <p>Student at MIT</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+                    <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+                    <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+                    <li><a href="#research" id="research-link"><span class="icon solid fa-flask">Research</span></a></li>
+                    <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="bottom">
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="https://github.com/shrika-eddula" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/shrika-eddula/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="mailto:shrika@mit.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="https://instagram.com/shrika_ed" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <section id="top" class="one dark cover">
+            <div class="container">
+
+                <header>
+                    <h2 class="alt">Greetings! I'm <strong>Shrika</strong>, a student at MIT studying Computer Science
+                        and AI (6-4) and Business Management (15-1).</h2>
+                </header>
+
+                <footer>
+                    <a href="#portfolio" class="button scrolly">Portfolio</a>
+                </footer>
+
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="two-columns section">
+            <div class="container">
+                <header>
+                    <h2>About Me</h2>
+                </header>
+                <div class="column">
+                    <img src="images/backdrop.jpg" alt="Backdrop Image">
+                </div>
+                <div class="column">
+                    <p>Hi there! I coded up this website to serve as a portfolio for my projects, 
+                        research, and other shenanigans. My professional interests lie in the 
+                        intersection of CS & AI for social good! In my free time, I enjoy lifting,
+                        poetry, traveling/backpacking, and anything outdoors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <header>
+                    <h2>Career Timeline</h2>
+                </header>
+                <div class="timeline-horizontal">
+                    <div class="timeline-event">
+                        <div class="timeline-icon">
+                            <img src="images/icon1.png" alt="Event 1 Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Event Title 1</h3>
+                            <p>Description of notable career event 1. Include details, achievements, and any other relevant information.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-icon">
+                            <img src="images/icon2.png" alt="Event 2 Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Event Title 2</h3>
+                            <p>Description of notable career event 2. Include details, achievements, and any other relevant information.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-icon">
+                            <img src="images/icon3.png" alt="Event 3 Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Event Title 3</h3>
+                            <p>Description of notable career event 3. Include details, achievements, and any other relevant information.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-icon">
+                            <img src="images/icon4.png" alt="Event 4 Icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Event Title 4</h3>
+                            <p>Description of notable career event 4. Include details, achievements, and any other relevant information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .timeline-horizontal {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    position: relative;
+                    margin-top: 40px;
+                    padding: 20px 0;
+                }
+                .timeline-horizontal::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    height: 6px;
+                    background-color: #1abc9c;
+                    z-index: -1;
+                }
+                .timeline-event {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    width: 200px;
+                }
+                .timeline-icon {
+                    width: 50px;
+                    height: 50px;
+                    background: white;
+                    border: 4px solid #1abc9c;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                .timeline-icon img {
+                    width: 50%;
+                    height: 50%;
+                }
+                .timeline-content {
+                    text-align: center;
+                    padding: 15px;
+                    background: white;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    width: 180px;
+                }
+                .timeline-content h3 {
+                    color: #1abc9c;
+                    margin-top: 0;
+                }
+                .timeline-content p {
+                    color: #34495e;
+                    font-size: 0.9em;
+                }
+            </style>
+        </section>
+
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <header>
+                    <h2>Portfolio</h2>
+                </header>
+                <p>Here are some of my recent projects:</p>
+                <ul>
+                    <li>Ultra-Sensitive Cardiac Biomarker Detection: Developing a novel approach using gold nanocavity localized plasmon resonance for early diagnosis of myocardial infarction.</li>
+                    <li>Data Privacy Research: Exploring public perception and the ethical implications of data surveillance and privacy.</li>
+                    <li>Machine Learning Applications: Implementing machine learning algorithms to enhance computational efficiency and accuracy in various domains.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research" class="section">
+            <div class="container">
+                <header>
+                    <h2>Research</h2>
+                </header>
+                <p>My research focuses on applying advanced machine learning techniques to solve critical problems in healthcare and technology. I'm particularly interested in the ethical implications of AI and how we can ensure it benefits society as a whole.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <header>
+                    <h2>Contact</h2>
+                </header>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:shrika@mit.edu">shrika@mit.edu</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/shrika-eddula/" target="_blank">linkedin.com/in/shrika-eddula</a></p>
+                    <p>Twitter: <a href="https://twitter.com/shrikaeddula" target="_blank">@shrikeeddula</a></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shrika

@@ -40,14 +40,45 @@
 
 				<div class="bottom">
 					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/shrika-eddula" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/shrika-eddula/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:shrika@mit.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://instagram.com/shrika_ed" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-
+					<ul class="icons">
+						<li><a href="https://github.com/shrika-eddula" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/shrika-eddula/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:shrika@mit.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://instagram.com/shrika_ed" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+					<style>
+						.icons {
+							display: flex;
+							gap: 2px; /* Reduced the gap between icons */
+							justify-content: center;
+							align-items: center;
+							margin-top: 20px;
+						}
+						.icons li {
+							list-style: none;
+						}
+						.icons a {
+							font-size: 1.7em; /* Adjust the size as needed */
+							color: #2c3e50;
+							text-decoration: none;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+							transition: transform 0.3s;
+						}
+						.icons a:hover {
+							transform: scale(1.1);
+						}
+						.icons .label {
+							display: none;
+						}
+					</style>
 				</div>
+				
 
 			</div>
 
@@ -59,8 +90,7 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Greetings! I'm <strong>Shrika</strong>, a student at MIT studying Computer Science
-									and AI (6-4) and Business Management (15-1).</h2>
+								<h2 class="alt">Greetings! I'm <strong>Shrika</strong>, a student at MIT studying CS + Business.</h2>
 								<!-- <p>Feel free to browse around and get to know me better!</p> -->
 							</header>
 
@@ -75,7 +105,7 @@
 					<section id="about" class="two-columns">
 						<div class="container">
 						<header>
-							<h2>About Me</h2>
+							<h2>Hi there!</h2>
 						</header>
 
 						<head>
@@ -119,10 +149,9 @@
 							</div>
 							<div class="column">
 							  <div class="text-block">
-								<p>Hi there! I coded up this website to serve as a portfolio for my projects, 
-									research, and other shenanigans. My professional interests lie in the 
-									intersection of CS & AI for social good! In my free time, I enjoy lifting,
-									poetry, traveling/backpacking, and anything outdoors.</p>
+								<p>I created this website to serve as a portfolio for my projects, research, and other shenanigans. 
+									My professoional interests lie in human centric interfaces and building from the ground up.
+									When I'm not being a nerd, I'm lifting, traveling, or taking photos!</p>
 							  </div>
 							</div>
 						  </div>
@@ -132,8 +161,120 @@
 						
 					
 						</div>
+
+						<div class="container">
+							<div class="timeline-horizontal">
+								<div class="timeline-event">
+									<div class="timeline-icon">
+										<img src="mit.png" alt="Event 1 Icon" style="width: 100%; height: 100%;">
+									</div>
+									<div class="timeline-content">
+										<h3>Sept 2022</h3>
+										<p>Began double major in CS + Business @ MIT</p>
+									</div>
+								</div>
+								<div class="timeline-event">
+									<div class="timeline-icon">
+										<img src="media.png" alt="Event 2 Icon"style="width: 75%; height: 75;">
+									</div>
+									<div class="timeline-content">
+										<h3>Jan '23</h3>
+										<p>Began computer vision research @ MIT Media Lab</p>
+									</div>
+								</div>
+								<div class="timeline-event">
+									<div class="timeline-icon">
+										<img src="army.webp" alt="Event 3 Icon">
+									</div>
+									<div class="timeline-content">
+										<h3>Summer '23</h3>
+										<p>ML Intern @ United States Army</p>
+									</div>
+								</div>
+								<div class="timeline-event">
+									<div class="timeline-icon">
+										<img src="applecircle.webp" alt="Event 4 Icon">
+									</div>
+									<div class="timeline-content">
+										<h3>Summer '24</h3>
+										<p>SWE Intern @ Apple Vision Pro</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<style>
+							.timeline-horizontal {
+								display: flex;
+								justify-content: space-around;
+								align-items: center;
+								flex-wrap: nowrap;
+								position: relative;
+								margin-top: 20px;
+								padding: 10px 0;
+							}
+							.timeline-horizontal::before {
+								content: '';
+								position: absolute;
+								top: 50%;
+								left: 0;
+								width: 100%;
+								height: 4px;
+								background-color: #1abc9c;
+								z-index: -1;
+							}
+							.timeline-event {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								position: relative;
+								width: 150px;
+								min-width: 150px;
+							}
+							.timeline-icon {
+								width: 40px;
+								height: 40px;
+								background: white;
+								border: 3px solid #1abc9c;
+								border-radius: 50%;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								margin-bottom: 5px;
+								box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+							}
+							.timeline-icon img {
+								width: 60%;
+								height: 60%;
+							}
+							.timeline-content {
+								text-align: center;
+								padding: 10px;
+								background: white;
+								border-radius: 8px;
+								box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+								width: 100%;
+								height: 120px; /* Ensure all boxes are the same height */
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+							}
+							.timeline-content h3 {
+								color: #1abc9c;
+								margin-top: 0;
+								font-size: 1em;
+							}
+							.timeline-content p {
+								color: #34495e;
+								font-size: 0.75em;
+								margin: 5px 0;
+								line-height: 1.2;
+							}
+						</style>
 					</section>
-					
+
+
+
+
 
 					<style>
 						/* Style for the project items */
